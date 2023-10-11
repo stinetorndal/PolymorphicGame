@@ -8,7 +8,7 @@ public interface Creature {
     public int attack();
 
     // return a String to end the sentence "You are walking and "
-    // it could for example be "a giant spider emerges from the dark corner" of " a happy troll jumps out of the woods"
+    // it could for example be "a giant spider emerges from the dark corner" or " a happy troll jumps out of the woods"
     public String meet();
 
     // receive damage and do something (for instance decrease health)
