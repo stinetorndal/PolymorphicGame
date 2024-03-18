@@ -9,7 +9,7 @@ public class GamePlay {
     private CreatureGenerator creatureGenerator = new CreatureGenerator();
 
     public void startGame() {
-        creatureGenerator.generateCreatures();
+        //creatureGenerator.generateCreatures();
         Scanner scanner = new Scanner(System.in);
         System.out.println("Adventure begins!");
         System.out.println("What is your name?");
@@ -61,5 +61,11 @@ public class GamePlay {
             System.out.println("It is a tie! Nobody is damaged");
 
     }
+    public Player getPlayer(){
+        return this.player;
+    }
+    public CreatureGenerator getCreatureGenerator(){
+        return this.creatureGenerator;
 
+    }
 }

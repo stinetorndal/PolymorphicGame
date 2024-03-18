@@ -1,11 +1,12 @@
 @startuml
 'https://plantuml.com/sequence-diagram
 
-
-
-Main -> GamePlay:new()
+'allerede når GamePlay loader instansieres CreatureGenerator
 GamePlay -> CreatureGenerator: new()
 CreatureGenerator-> ICreature: new()
+
+Main -> GamePlay:new()
+
 
 Main -> GamePlay:startGame()
 
