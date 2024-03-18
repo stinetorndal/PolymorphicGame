@@ -14,11 +14,8 @@ public class CreatureGenerator {
     }
 
     public void generateCreatures() {
-        creatures.add(new Witch("Tricky Trix"));
-        creatures.add(new Spider("Shelob"));
-        creatures.add(new Dragon("Puff"));
-        creatures.add(new Spider("Peter"));
-        creatures.add(new Dragon("Smaug"));
+        creatures.add(new Skeleton("ROLF"));
+
     }
 
     public Creature getRandomCreature() {
@@ -28,12 +25,12 @@ public class CreatureGenerator {
     }
 
     public void cloneCreature(Creature creature, String name){
-        String creatureType = creature.getType();
+       /* String creatureType = creature.getType();
 
         switch(creatureType){
             case "Dragon":creatures.add(new Dragon(name));
 
-        }
+        }*/
 
 
     }
