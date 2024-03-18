@@ -13,9 +13,9 @@ public class Goblin implements Creature {
 
     public Goblin(String name) {
         this.name = name;
-        this.health = 25;
+        this.health = 50;
         Random r = new Random();
-        if (r.nextInt() % 10 == 0) {
+        if (r.nextInt() % 2 == 0) {
             isSand = true;
         } else {
             isSand = false;
@@ -26,7 +26,6 @@ public class Goblin implements Creature {
     @Override
     public int attack() {
         if (isSand) {
-            System.out.println("The goblin threw sand in your eyes and you missed your turn \n");
             return 1;
 
         } else {
@@ -41,9 +40,12 @@ public class Goblin implements Creature {
 
 
     public void takeDamage(int damage) {
+
         if (isSand) {
-            health += 3;
-            playerAttack = 0;
+            System.out.println("The goblin threw sand in your eyes and you fell");
+            System.out.println(Main.gameplay.getPlayer().getName() + " inflicted 1 damage to yourself");
+            health -= damage -3;
+            Main.gameplay.getPlayer().changeHealth(-2);
         } else {
             health -= damage;
 
@@ -57,6 +59,11 @@ public class Goblin implements Creature {
 
     public String getName() {
         return name;
+    }
+
+    @Override
+    public String getType() {
+        return null;
     }
 }
 
