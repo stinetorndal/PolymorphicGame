@@ -14,13 +14,13 @@ public class CreatureGenerator {
     }
 
     public void generateCreatures() {
-        creatures.add(new Skeleton("ROLF"));
-        creatures.add(new Ooze("Green Ooze"));
+        creatures.add(new Goblin("Asim"));
+    /*    creatures.add(new Ooze("Green Ooze"));
         creatures.add(new Butterfly("Sommer"));
         creatures.add(new FluffBall("Poro"));
         creatures.add(new Striga("Dengue"));
         creatures.add(new Werewolf("pia"));
-        creatures.add(new Onepunchman("zana"));
+        creatures.add(new Onepunchman("zana"));*/
         
 
     }
@@ -32,12 +32,12 @@ public class CreatureGenerator {
     }
 
     public void cloneCreature(Creature creature, String name){
-       /* String creatureType = creature.getType();
+        String creatureType = creature.getType();
 
         switch(creatureType){
             case "Dragon":creatures.add(new Dragon(name));
 
-        }*/
+        }
 
 
     }

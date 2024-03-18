@@ -34,7 +34,10 @@ public class Ooze implements Creature{
     public void takeDamage(int damage) {
         this.health -= damage;
         if (this.health == this.maxHealth/2) {
+
           Main.gameplay.getCreatureGenerator().cloneCreature(this, "Small " + this.name);
+
+
         }
 
     }

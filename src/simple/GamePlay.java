@@ -8,6 +8,8 @@ public class GamePlay {
     private Player player;
     private CreatureGenerator creatureGenerator = new CreatureGenerator();
 
+    public int playerAttack;
+
     public void startGame() {
         //creatureGenerator.generateCreatures();
         Scanner scanner = new Scanner(System.in);
@@ -47,7 +49,7 @@ public class GamePlay {
     private void fight(Creature creature) {
         System.out.println(player.getName() + " and " + creature.getName() + " will now fight");
         Random random = new Random();
-        int playerAttack = random.nextInt(10) + 1;
+        playerAttack = random.nextInt(10) + 1;
         int creatureAttack = creature.attack();
         System.out.println(player.getName() + " attacks with " + playerAttack);
         System.out.println(creature.getName() + " attacks with " + creatureAttack);

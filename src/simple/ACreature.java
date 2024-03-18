@@ -9,6 +9,7 @@ abstract public class ACreature implements Creature{
 
     }
     public String getType(){
+
         return this.type;
     }
 

@@ -46,6 +46,7 @@ public class Goblin implements Creature {
             System.out.println(Main.gameplay.getPlayer().getName() + " inflicted 1 damage to yourself");
             health -= damage -3;
             Main.gameplay.getPlayer().changeHealth(-2);
+
         } else {
             health -= damage;
 
@@ -61,7 +62,7 @@ public class Goblin implements Creature {
         return name;
     }
 
-    @Override
+   // @Override
     public String getType() {
         return null;
     }

@@ -1,11 +1,11 @@
 package simple;
 
-public class Dragon implements Creature {
+public class Dragon extends ACreature {
 
-    int health;
-    String name;
+
 
     public Dragon(String name) {
+
         this.health = 10;
         this.name = name;
     }
