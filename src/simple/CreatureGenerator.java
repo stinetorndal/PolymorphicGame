@@ -9,6 +9,7 @@ public class CreatureGenerator {
     private ArrayList<Creature> creatures = new ArrayList<>();
 
     public CreatureGenerator(){
+
         generateCreatures();
     }
 

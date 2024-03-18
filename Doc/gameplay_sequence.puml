@@ -2,10 +2,11 @@
 'https://plantuml.com/sequence-diagram
 
 
+
+Main -> GamePlay:new()
 GamePlay -> CreatureGenerator: new()
 CreatureGenerator-> ICreature: new()
 
-Main -> GamePlay:new()
 Main -> GamePlay:startGame()
 
 GamePlay -> Player: new()
