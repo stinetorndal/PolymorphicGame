@@ -13,6 +13,7 @@ public class CreatureGenerator {
     }
 
     public void generateCreatures() {
+        creatures.add(new Witch("Tricky Trix"));
         creatures.add(new Spider("Shelob"));
         creatures.add(new Dragon("Puff"));
         creatures.add(new Spider("Peter"));
