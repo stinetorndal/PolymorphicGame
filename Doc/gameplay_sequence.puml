@@ -1,7 +1,7 @@
 @startuml
 'https://plantuml.com/sequence-diagram
 
-
+!pragma layout smetana
 
 Main -> GamePlay:new()
 GamePlay -> CreatureGenerator: new()
