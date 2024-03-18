@@ -49,7 +49,7 @@ public class Ooze implements Creature{
         return this.name;
     }
 
-    @Override
+   // @Override
     public String getType() {
         return "Ooze";
     }

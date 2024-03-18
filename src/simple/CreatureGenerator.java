@@ -15,6 +15,13 @@ public class CreatureGenerator {
 
     public void generateCreatures() {
         creatures.add(new Skeleton("ROLF"));
+        creatures.add(new Ooze("Green Ooze"));
+        creatures.add(new Butterfly("Sommer"));
+        creatures.add(new FluffBall("Poro"));
+        creatures.add(new Striga("Dengue"));
+        creatures.add(new Werewolf("pia"));
+
+        
 
     }
 
