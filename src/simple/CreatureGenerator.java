@@ -14,6 +14,7 @@ public class CreatureGenerator {
     }
 
     public void generateCreatures() {
+        creatures.add(new CountryAss("Svend sved"));
         creatures.add(new Goblin("Asim"));
     /*    creatures.add(new Ooze("Green Ooze"));
         creatures.add(new Butterfly("Sommer"));
