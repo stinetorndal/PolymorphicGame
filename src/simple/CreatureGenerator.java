@@ -20,7 +20,7 @@ public class CreatureGenerator {
         creatures.add(new FluffBall("Poro"));
         creatures.add(new Striga("Dengue"));
         creatures.add(new Werewolf("pia"));
-
+        creatures.add(new Onepunchman("zana"));
         
 
     }
