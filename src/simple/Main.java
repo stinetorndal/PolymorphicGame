@@ -1,8 +1,9 @@
 package simple;
 
 public class Main {
+    public static GamePlay gameplay;
     public static void main(String[] args) {
-        GamePlay gameplay = new GamePlay();
+       gameplay = new GamePlay();
         gameplay.startGame();
 
     }

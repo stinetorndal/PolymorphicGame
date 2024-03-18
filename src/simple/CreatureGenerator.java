@@ -9,10 +9,12 @@ public class CreatureGenerator {
     private ArrayList<Creature> creatures = new ArrayList<>();
 
     public CreatureGenerator(){
+
         generateCreatures();
     }
 
     public void generateCreatures() {
+        creatures.add(new Witch("Tricky Trix"));
         creatures.add(new Spider("Shelob"));
         creatures.add(new Dragon("Puff"));
         creatures.add(new Spider("Peter"));
@@ -23,5 +25,16 @@ public class CreatureGenerator {
         Random r = new Random();
         int i = r.nextInt(creatures.size());
         return creatures.get(i);
+    }
+
+    public void cloneCreature(Creature creature, String name){
+        String creatureType = creature.getType();
+
+        switch(creatureType){
+            case "Dragon":creatures.add(new Dragon(name));
+
+        }
+
+
     }
 }
