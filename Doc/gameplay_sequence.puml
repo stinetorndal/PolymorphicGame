@@ -1,0 +1,42 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+
+GamePlay -> CreatureGenerator: new()
+CreatureGenerator-> ICreature: new()
+
+Main -> GamePlay:new()
+Main -> GamePlay:startGame()
+
+GamePlay -> Player: new()
+
+loop player still alive
+
+GamePlay -> CreatureGenerator: getRandomCreature()
+CreatureGenerator--> GamePlay: creature
+GamePlay -> ICreature: creature.meet()
+ICreature -->GamePlay: "A wicked witch sits by the road."
+
+    loop player and creature still alive
+
+        alt fighting == true
+        GamePlay -> GamePlay: fight()
+        GamePlay -> Random: int playerAttck = getNext()
+        GamePlay -> ICreature: int creatureAttack = attack()
+            alt (playerAttack > creatureAttack)
+            GamePlay -> ICreature: takeDamage(playerAttack)
+            else
+            GamePlay -> Player: changeHealth(-creatureAttack)
+            end
+
+        end
+        ' end fight coice
+
+    end
+' end fight loop
+
+end
+' end meet creature loop
+
+
+@enduml
