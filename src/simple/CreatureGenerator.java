@@ -26,4 +26,15 @@ public class CreatureGenerator {
         int i = r.nextInt(creatures.size());
         return creatures.get(i);
     }
+
+    public void cloneCreature(Creature creature, String name){
+        String creatureType = creature.getType();
+
+        switch(creatureType){
+            case "Dragon":creatures.add(new Dragon(name));
+
+        }
+
+
+    }
 }

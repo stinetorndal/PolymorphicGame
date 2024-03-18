@@ -17,6 +17,7 @@ public class Player {
     }
 
     public void changeHealth(int changeby){
+
         this.health += changeby;
     }
 

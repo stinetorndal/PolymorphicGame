@@ -22,4 +22,6 @@ public interface Creature {
 
     // let the creature have a name
     public String getName();
+
+    String getType();
 }
