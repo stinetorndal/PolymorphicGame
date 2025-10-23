@@ -14,15 +14,15 @@ public class Dragon implements Creature {
     public int attack() {
         return 7;
     }
-
+    @Override
     public void takeDamage(int damage) {
         health -= damage;
     }
-
+    @Override
     public int getHealth() {
         return health;
     }
-
+    @Override
     public String getName() {
        return this.name;
     }

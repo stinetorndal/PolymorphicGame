@@ -1,5 +1,11 @@
 package simple;
 
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.concurrent.ThreadLocalRandom;
+
+
 public interface Creature {
 
     // return a number between 0 and 10
