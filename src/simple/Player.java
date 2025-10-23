@@ -38,7 +38,5 @@ public class Player {
             }
         }
     }
-    //public boolean isAlive(){
-      //  return health > 0;
-    //}
+
 }

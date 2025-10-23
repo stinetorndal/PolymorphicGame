@@ -37,7 +37,7 @@ public class CreatureGenerator {
             case "Karen" -> new Karen("Karen");
             case "Vampire" -> new Zombie ("Rob");
             case "Rat" -> new Rat("Lars");
-            default -> new Spider ("Unknown");
+            default -> new Spider ("Your invisible friend");
         };
         }
 }

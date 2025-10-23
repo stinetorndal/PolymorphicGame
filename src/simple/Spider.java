@@ -24,7 +24,7 @@ public class Spider implements Creature {
     public String meet() {
         return isNight
                 ? "a giant spider sneaks up on you in the dark"
-                : "a giant spider comes crawling from a hole in the ground";
+                : "a giant spider comes crawling out from a hole in the ground";
     }
     @Override
     public String getName() {
